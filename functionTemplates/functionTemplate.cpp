@@ -1,5 +1,4 @@
 #include <iostream>
-#include <type_traits>
 
 /*Finds the maximum of values of the same type*/
 template<typename T>
@@ -13,7 +12,7 @@ T1 max(T1 a, T2 b){
     return a > b? a : b; // return type if the deducted T1
 }
 
-/* This will invalidate the second taste
+/* This will invalidate the second test
  * template<typename T1,typename T2>
 auto max(T1 a, T2 b) -> decltype(a>b? a:b) {
     return a > b? a : b; // return type if the deducted
